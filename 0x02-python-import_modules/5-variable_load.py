@@ -4,5 +4,4 @@ if __name__ == "__main__":
     def find_variable():
         print(a)
 
-    if __name__ == "__main__":
         find_variable()
