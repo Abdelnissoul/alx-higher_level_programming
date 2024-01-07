@@ -3,10 +3,8 @@ def print_matrix_integer(matrix=[[]]):
     if not matrix:
         print()
     else:
-        for sub in range(len(matrix)):
-            if elem != len(matrix[sub]) - 1:
-                closing = ' '
-            else:
-                closing = ''
-            print("{:d}".format(matrix[sub][elem]), end=closing)
-        print()
+        for submatrix in matrix:
+            for a, n in enumerate(submatrix):
+                print("{:d}".format(n), end="")
+                if (i != len(submatrix) - 1):
+                    print(" ", end="")
