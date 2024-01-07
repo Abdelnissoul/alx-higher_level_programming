@@ -6,5 +6,5 @@ def print_matrix_integer(matrix=[[]]):
         for submatrix in matrix:
             for a, n in enumerate(submatrix):
                 print("{:d}".format(n), end="")
-                if (i != len(submatrix) - 1):
+                if (a != len(submatrix) - 1):
                     print(" ", end="")
