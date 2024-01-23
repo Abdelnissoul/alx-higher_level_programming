@@ -3,7 +3,7 @@
 
 
 class Square:
-    """initialization of the class square which is private instance attribute"""
+    """initialization of the class square which is"""
 
     def __init__(self, size=0):
         """initializes a new square instance

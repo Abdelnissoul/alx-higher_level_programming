@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""class Square that defines private instance attribute and a public instance method"""
+"""class Square that defines private instance attribute and"""
 
 
 class Square:
-    """A class Square with a private instance attribute, and public instance method,
+    """A class Square with a public instance method,
     that well set and get the size """
 
     def __init__(self, size=0):

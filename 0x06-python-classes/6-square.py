@@ -1,20 +1,20 @@
 #!/usr/bin/python3
-""" a class MySquare with private instance attributes and public instance."""
+""" a class MySquare with privaes and public instance."""
 
 
 class MySquare:
-    """A class MySquare with two methods private instance and attributes and public instance"""
+    """A class MySquare with two methbutes and public instance"""
 
     def __init__(self, my_size=0, my_position=(0, 0)):
         """Initializes a new MySquare instance.
 
         Args:
             my_size (int): The size of the square. Defaults to 0.
-            my_position (tuple): The position of the square. Defaults to (0, 0).
+            my_position (tuple):0.
 
         Raises:
-            TypeError: If my_size is not an integer or my_position is not a tuple of 2 positive integers.
-            ValueError: If my_size is less than 0 or my_position contains non-positive integers.
+            TypeError: If my_size is not a tuple of 2 positive integers.
+            ValueError: If my_size is less than 0 positive integers.
 
         """
         self.my_size = my_size
@@ -56,8 +56,8 @@ class MySquare:
             value (tuple): The new position value.
 
         Raises:
-            TypeError: If my_position is not a tuple of 2 positive integers.
-            ValueError: If my_position contains non-positive integers.
+            TypeError: If my_position  positive integers.
+            ValueError: If my_posin-positive integers.
 
         """
         if not isinstance(value, tuple) or len(value) != 2:
