@@ -1,6 +1,6 @@
 class Square:
     """A class Square that defines a square."""
-    
+
     def __init__(self, size=0, position=(0, 0)):
         """Initializes a new Square instance.
 
@@ -9,7 +9,7 @@ class Square:
             position: The position of the square.
 
         Raises:
-            TypeError: If size is not an integer or position is not a tuple of 2 positive integers.
+            TypeError: If size is not an integer or position integers.
             ValueError: If size is less than 0.
 
         """
@@ -92,3 +92,4 @@ class Square:
         for _ in range(self.__size):
             res += " " * self.__position[0] + "#" * self.__size + "\n"
         return res.rstrip()
+
