@@ -1,8 +1,9 @@
-
 #!/usr/bin/python3
 """Module that defines the MagicClass class"""
 
+
 import math
+
 
 class MagicClass:
     """Represents a magic circle"""
