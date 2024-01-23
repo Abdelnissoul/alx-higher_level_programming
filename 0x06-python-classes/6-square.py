@@ -1,70 +1,70 @@
 #!/usr/bin/python3
-""" a class MySquare with privaes and public instance."""
+""" a class Square with privaes and public instance."""
 
 
-class MySquare:
-    """A class MySquare with two methbutes and public instance"""
+class Square:
+    """A class Square with two methbutes and public instance"""
 
-    def __init__(self, my_size=0, my_position=(0, 0)):
-        """Initializes a new MySquare instance.
+    def __init__(self, size=0, position=(0, 0)):
+        """Initializes a new Square instance.
 
         Args:
-            my_size (int): The size of the square. Defaults to 0.
-            my_position (tuple):0.
+            size (int): The size of the square. Defaults to 0.
+            position (tuple): The position of the square. Defaults to (0, 0).
 
         Raises:
-            TypeError: If my_size is not a tuple of 2 positive integers.
-            ValueError: If my_size is less than 0 positive integers.
+            TypeError: If size is not an integer.
+            ValueError: If size is a tuple of 2 positive integers.
 
         """
-        self.my_size = my_size
-        self.my_position = my_position
+        self.size = size
+        self.position = position
 
     @property
-    def my_size(self):
+    def size(self):
         """Retrieve the size of the square."""
-        return self.__my_size
+        return self.__size
 
-    @my_size.setter
-    def my_size(self, value):
+    @size.setter
+    def size(self, value):
         """Set the size of the square.
 
         Args:
             value (int): The new size value.
 
         Raises:
-            TypeError: If my_size is not an integer.
-            ValueError: If my_size is less than 0.
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
 
         """
         if not isinstance(value, int):
-            raise TypeError("my_size must be an integer")
+            raise TypeError("size must be an integer")
         elif value < 0:
-            raise ValueError("my_size must be >= 0")
-        self.__my_size = value
+            raise ValueError("size must be >= 0")
+        self.__size = value
 
     @property
-    def my_position(self):
+    def position(self):
         """Retrieve the position of the square."""
-        return self.__my_position
+        return self.__position
 
-    @my_position.setter
-    def my_position(self, value):
+    @position.setter
+    def position(self, value):
         """Set the position of the square.
 
         Args:
             value (tuple): The new position value.
 
         Raises:
-            TypeError: If my_position  positive integers.
-            ValueError: If my_posin-positive integers.
+            TypeError: If position is not a tuple of 2 positive integers.
+            ValueError: If position contains non-positive integers.
 
         """
         if not isinstance(value, tuple) or len(value) != 2:
-            raise TypeError("my_position must be a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         elif not all(isinstance(coord, int) and coord >= 0 for coord in value):
-            raise ValueError("my_position must be a tuple of 2 positive integers")
-        self.__my_position = value
+            raise ValueError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     def area(self):
         """Computes the area of the square.
@@ -73,7 +73,7 @@ class MySquare:
             int: The area of the square.
 
         """
-        return self.__my_size ** 2
+        return self.__size ** 2
 
     def my_print(self):
         """Print the square using hash sign '#' characters.
@@ -81,10 +81,10 @@ class MySquare:
         If size is equal to 0, print an empty line.
 
         """
-        if self.__my_size == 0:
+        if self.__size == 0:
             print()
         else:
-            for _ in range(self.__my_position[1]):
+            for _ in range(self.__position[1]):
                 print()
-            for _ in range(self.__my_size):
-                print(" " * self.__my_position[0] + "#" * self.__my_size)
+            for _ in range(self.__size):
+                print(" " * self.__position[0] + "#" * self.__size)
