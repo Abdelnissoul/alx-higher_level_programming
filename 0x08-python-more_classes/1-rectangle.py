@@ -2,15 +2,13 @@
 """Defines a Rectangle class."""
 
 
-
 class Rectangle:
     """class of rectangle with width and height attributes."""
-
 
     def __init__(self, width=0, height=0):
         """start a new Rectangle by default
          
-         Args:
+        Args:
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
         """
