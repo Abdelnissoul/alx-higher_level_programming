@@ -2,7 +2,6 @@
 """Defines a Rectangle class."""
 
 
-
 class Rectangle:
     """Represent a rectangle Class"""
 
@@ -66,3 +65,4 @@ class Rectangle:
             if i != self.__height - 1:
                 list_of_rectangle.append("\n")
         return ("".join(list_of_rectangle))
+
