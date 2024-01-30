@@ -1,0 +1,52 @@
+for 2-matrix_divide.py
+===============================================
+Import module:
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test normal matrix:
+    >>> matrix_divided([[2, 4, 8], [1, 2, 3]], 2)
+    [[1.0, 2.0, 4.0], [0.5, 1.0, 1.5]]
+
+The original matrix is left unchanged:
+    >>> print(matrix)
+    [[1, 2, 3], [4, 5, 6]]
+
+Testing one element:
+    >>> matrix_divided([[2]], 2)
+    [[1.0]]
+
+Test division by negative:
+    >>> matrix_divided([[2, 4, 8], [1, 2, 3]], -3)
+    [[-0.67, -1.33, -2.67], [-0.33, -0.67, -1.0]]
+
+The function can also handle floating-point numbers:
+    >>> matrix = [
+    ...     [1.1, -2.2, 3.3],
+    ...     [4.4, 5.5, -6.6]
+    ... ]
+    >>> print(matrix_divided(matrix, 3))
+    [[0.37, -0.73, 1.1], [1.47, 1.83, -2.2]]
+
+Test 1st arg none:
+    >>> matrix_divided(none, 1)
+    Traceback (most recent call last):
+    ...
+    NameError: name 'none' is not defined
+
+Test empty matrix:
+    >>> matrix_divided([[]], 10)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test matrix with non number
+    >>> matrix_divided([[2, 4, 8], [1, "foo", 3]], 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test matrix with different rows
+    >>> matrix_divided([[2, 4, 8], [1, 3]], 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size

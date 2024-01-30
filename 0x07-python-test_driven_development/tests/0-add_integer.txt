@@ -1,8 +1,5 @@
-For the `0-add_integer` file
-============================
-
-Using `add_integer`
----------------------
+for 0-add_integer.py
+===================================
 
 Import function from file:
 

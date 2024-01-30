@@ -1,0 +1,40 @@
+for 5-text_identation.py test file:
+=========================================================================
+Import module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test no delim:
+    >>> text_indentation("Hello Holberton")
+    Hello Holberton
+
+Test string with spaces:
+    >>> text_indentation("Holberton          ")
+    Holberton
+
+Test string with spaces 2:
+    >>> text_indentation("        Holberton")
+    Holberton
+    
+Test string with spaces 3:
+    >>> text_indentation("        Holberton          ")
+    Holberton
+Test string with empty string:
+    >>> text_indentation("")
+
+Test string with empty string 2:
+    >>> text_indentation("      ")
+
+Test simple:
+    >>> text_indentation("Hello: Holberton")
+    Hello:
+    <BLANKLINE>
+    Holberton
+
+Test delims with spaces:
+    >>> text_indentation("      ?:  :  ")
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    :
+    <BLANKLINE>
