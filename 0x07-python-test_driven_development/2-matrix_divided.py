@@ -31,3 +31,4 @@ def matrix_divided(matrix, div):
                 raise TypeError("matrix must be a matrix (list of lists) " +
                                 "of integers/floats")
     return [[round(i / div, 2) for i in row] for row in matrix]
+
