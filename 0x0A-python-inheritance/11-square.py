@@ -18,4 +18,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """ defines the string that represent the square"""
-        return "Square[] " + str(self.__size) + "/" + str(self.__size)
+        return "[Square] " + str(self.__size) + "/" + str(self.__size)
