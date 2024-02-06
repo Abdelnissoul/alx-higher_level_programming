@@ -24,4 +24,3 @@ class Student:
             if k in attrs:
                 new_dict[k] = val
         return new_dict
-
