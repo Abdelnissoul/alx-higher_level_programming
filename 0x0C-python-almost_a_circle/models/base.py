@@ -8,7 +8,7 @@ from json import dumps, loads
 
 class Base:
     """base class for id attribute"""
-    
+
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -155,3 +155,4 @@ class Base:
             turt.end_fill()
 
         time.sleep(5)
+
