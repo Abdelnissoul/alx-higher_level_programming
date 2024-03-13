@@ -155,4 +155,3 @@ class Base:
             turt.end_fill()
 
         time.sleep(5)
-
