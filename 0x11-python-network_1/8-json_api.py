@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
 Py script that sends a request to the URL
-and
-displays the body of the response.
+and displays the body of the response.
 """
 
 
