@@ -18,4 +18,4 @@ if __name__ == '__main__':
         user_data = resp.json()
         print(user_data.get('id'))
     else:
-        print("Authentication failed or unable to fetch user data.")
+        print("No result")
